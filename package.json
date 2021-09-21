@@ -31,7 +31,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint \"src/**/*.tsx\""
+    "lint": "eslint \"src/**/*.tsx\"",
+    "prettier": "prettier \"src/**/*.tsx\" --write"
   },
   "eslintConfig": {
     "extends": [

@@ -7,7 +7,7 @@ type SearchResult = {
 
 const api_git = 'https://api.github.com/';
 
-export const getRepos = async (currentPage: number, perPage: number, searchQuery: string = "stars:%3E1") =>
+export const getRepos = async (currentPage: number, perPage: number, searchQuery = "stars:%3E1") =>
     axios.get<SearchResult>(`${api_git}search/repositories?q=${searchQuery}&sort=stars&per_page=${perPage}&page=${currentPage}`);
 
 export const getCurrentRepo = async (username: string, repoName: string) =>
